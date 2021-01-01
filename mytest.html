@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="mytest.js"></script>
+    <link rel="stylesheet" href="./mytest.css" />
+    <link rel="icon" href="logo.jpg">
+    <title>Snigdha-Test</title>
+  </head>
+
+  <body>
+    <!-- Header with id="header" -->
+    <header id="header">
+     <!-- Nav element with id="nav-bar" and it always stays on top of the webpage -->
+      <nav
+        class="navbar fixed-top navbar-expand-lg narvbar-dark bg-black"
+        id="nav-bar"
+      >
+        <a class="navbar-brand" href="#"
+          ><!-- Image inside header with id="header-img" -->
+          <img width="80px" height="auto" src="logo.jpg" id="header-img" alt="deadpool-image" />Deadpool
+          </a>
+        <button style="border:#ffffff solid 4px; height: 2px; width: 2px;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <!-- Nav items with class="nav-link" -->
+            <a class="nav-link" href="#home">Home </a>
+          </li>
+          <li class="nav-item">
+            <!-- Nav items with class="nav-link" -->
+            <a class="nav-link" href="#movie">Movie </a>
+          </li>
+          <li class="nav-item">
+            <!-- Nav items with class="nav-link" -->
+            <a class="nav-link" href="#trailer"> Trailers</a>
+          </li>
+          <li class="nav-item">
+            <!-- Nav items with class="nav-link" -->
+            <a class="nav-link" href="#subscribe"> Subscribe</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <img src="dead.jpg" class="deadpool" alt="deadpool" />
+    </section>
+
+    <section id="movie">
+        
+        <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top poster" src="poster.jpg" alt="Card image cap">
+            </div>
+            <div class="card">
+              <div class="card-body movie-details">
+                <h1 class="card-title"><strong>DEADPOOL</strong></h1>
+                <p class="card-text">Hold onto your chimichangas, folks. From the studio that brought you all 3 Taken films comes the block-busting, fourth-wall-breaking masterpiece about Marvel Comics’ sexiest anti-hero! Starring God’s perfect idiot Ryan Reynolds and a bunch of other "actors," Deadpool is a giddy slice of awesomeness packed with more twists than Deadpool’s enemies’ intestines and more action than prom night. Amazeballs!</p>
+              <h4>DIRECTED BY</h4>
+              <p>Tim Miller</p>
+              <h4>WRITTEN BY</h4>
+              <p>Paul Wernick, Rhett Reese</p>
+              <h4>PRODUCED BY</h4>
+              <p>Simon Kinberg, Ryan Reynolds, Lauren Shuler Donner</p>
+              <h4>CAST</h4>
+              <p>Brianna Hildebrand, Ed Skrein, Gina Carano, Morena Baccarin, Ryan Reynolds, T.J. Miller</p>
+            <img src="r.jpg" alt="R-rated" />
+            </div>
+              
+            </div>
+          </div>
+    
+    </section>
+    <hr/>
+    <section id="trailer">
+        <div class="videos">
+        <h1>TRAILERS</h1>
+        <div class="flex-box">
+          <!-- Embedded video with if="video" -->
+        <div class="flex-item" id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ONHBaC-pfsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="flex-item">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FyKWUTwSYAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div></div>
+        </section>
+<hr/>
+    <section id="subscribe">
+        
+    <div class="container col-12 col-lg-5">  
+      <!-- Form element with id="form" -->
+        <form id="form" action="https://www.imdb.com/title/tt1431045/" method="post">
+          <h3>Subscribe to get daily new updates</h3>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <!-- Input field with id="email" and placeholder="Your Email Address" and HTML validation of type="email" -->
+            <input id="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+          
+          <fieldset>
+            <!-- Submit button with id="submit", submits the mail and opens imdb page for Deadpool -->
+            <button name="submit" value="submit" type="submit" id="submit" class="submit-btn">Submit</button>
+          </fieldset>
+          </form>
+      </div>
+      
+    
+    </section>
+
+    <div class="thanks">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+<h1>Thank you for visiting us
+  <span
+     class="txt-rotate"
+     data-period="2000"
+     data-rotate='[ "beautiful.", "gorgeous.", "smarty."]'></span>
+</h1>
+
+    
+    <img src="deadpool-sit-removebg-preview.png" id="footer" alt="deadpool-sitting" />
+  </div>
+    <section id="copyright">
+<footer>Developed by : Snigdha Tiwari</footer>
+    </section>
+  </body>
+</html>
